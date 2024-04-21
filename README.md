@@ -35,3 +35,7 @@ export default {
 - 2.cd react-jike-mobile
 - 3.npm install
 - 4.npm run dev
+
+## 安装 antd-mobile：npm install --save antd-mobile
+
+## 安装 react-router-dom：npm i react-router-dom
