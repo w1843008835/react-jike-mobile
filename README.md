@@ -29,4 +29,9 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-## 创建工程：1.npm create vite@latest react-jike-mobile -- --template react-ts 2.cd react-jike-mobile 3.npm install 4.npm run dev
+## 创建工程：
+
+- 1.npm create vite@latest react-jike-mobile -- --template react-ts
+- 2.cd react-jike-mobile
+- 3.npm install
+- 4.npm run dev
