@@ -1,4 +1,4 @@
-import { Image, List } from "antd-mobile";
+import { Image, InfiniteScroll, List } from "antd-mobile";
 // mock数据
 import { users } from "./users";
 import { useEffect, useState } from "react";
@@ -31,6 +31,24 @@ const HomeList = (props: Props) => {
     };
     getList();
   }, []);
+  const [hasMore, setHasMore] = useState(true);
+  const loadMore = async () => {
+    try {
+      const res = await fetchListAPI({
+        art_id: art_id,
+        timestamp: listRes.pre_timestamp,
+      });
+      setListRes({
+        article: [...listRes.article, ...res.data.data.article],
+        pre_timestamp: res.data.data.pre_timestamp,
+      });
+      if (res.data.data.article.length === 0) {
+        setHasMore(false);
+      }
+    } catch (error) {
+      throw new Error("fetch list error");
+    }
+  };
   return (
     <>
       <List>
@@ -52,6 +70,7 @@ const HomeList = (props: Props) => {
           </List.Item>
         ))}
       </List>
+      <InfiniteScroll loadMore={loadMore} hasMore={hasMore} threshold={10} />
     </>
   );
 };

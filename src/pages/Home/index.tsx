@@ -12,7 +12,9 @@ const Home = () => {
       <Tabs>
         {chanels.map((item) => (
           <Tabs.Tab title={item.name} key={item.id}>
-            <HomeList chanelId={item.id} />
+            <div className="listContainer">
+              <HomeList art_id={item.id} />
+            </div>
           </Tabs.Tab>
         ))}
       </Tabs>
