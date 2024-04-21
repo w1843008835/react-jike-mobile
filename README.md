@@ -39,3 +39,5 @@ export default {
 ## 安装 antd-mobile：npm install --save antd-mobile
 
 ## 安装 react-router-dom：npm i react-router-dom
+
+## 安装 npm i @types/node -D
