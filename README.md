@@ -41,3 +41,10 @@ export default {
 ## 安装 react-router-dom：npm i react-router-dom
 
 ## 安装 npm i @types/node -D
+
+## 安装 npm i axios
+
+## MOCK:
+
+- npm install json-server
+- npm run server
