@@ -1,18 +1,17 @@
-import {http} from '@/utils'
-import type {ResType} from './share'
+import { http } from "@/utils";
+import type { ResType } from "./share";
 
-
-type ChanelItem = {
-    id:string
-    name:string
-}
+export type ChanelItem = {
+  id: string;
+  name: string;
+};
 
 type ChanelRes = {
-    chanels:ChanelItem[]
-}
+  chanels: ChanelItem[];
+};
 
-export function fetchChanelAPI(){
-    http.request<ResType<ChanelRes>>({
-        url:'/data'
-    })
+export function fetchChanelAPI() {
+  return http.request<ResType<ChanelRes>>({
+    url: "/data",
+  });
 }

@@ -1,16 +1,17 @@
 {
-    "data":{
-        "chanels": [
-            {
-              "id": "001",
-              "name": "java"
-            },
-            {
-              "id": "002",
-              "name": "python"
-            }
-          ]
+  "data": {
+    "data": {
+      "chanels": [
+        {
+          "id": "001",
+          "name": "java"
+        },
+        {
+          "id": "002",
+          "name": "python"
+        }
+      ]
     },
-    "message":""
-   
+    "message": ""
+  }
 }
